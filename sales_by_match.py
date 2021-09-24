@@ -25,14 +25,13 @@ def sockMerchant(n, ar):
     # 2. Quantify instances
     for key in colors.keys():
         colors[key] = ar.count(key)
-    print (colors)
     # 3. Quantify pairs
     colors_pairs = colors.copy()
     for key in colors_pairs.keys():
-        colors[key] = colors[key]//2
-    print (colors_pairs)
+        colors_pairs[key] = colors_pairs[key]//2
+    quantity = sum(colors_pairs.values())
     # 4. Return Quantity
-    # return quantity
+    return quantity
     
     
 # if __name__ == '__main__':
