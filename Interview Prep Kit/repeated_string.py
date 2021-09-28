@@ -19,7 +19,7 @@ import sys
 def repeatedString(s, n):
     # Repeat string
     elements = len(s)
-    rep = math.ceil(n/elements)
+    rep = float(math.ceil(n/elements))
     rep_string = rep*s
     rep_string = rep_string[:n]
     # Count occurencies of a
@@ -28,6 +28,7 @@ def repeatedString(s, n):
     return a_occur
 
 repeatedString("aba",10)
+repeatedString("a",1000000000000)
 
 
 # if __name__ == '__main__':
