@@ -51,8 +51,8 @@ sort_elements_by_frequency(example1_array)
 # Ans: 4 4 5 5 6
 
 # Example 2
-example2_array = [9, 9, 9, 2, 5]
-sort_elements_by_frequency(example2_array)
+# example2_array = [9, 9, 9, 2, 5]
+# sort_elements_by_frequency(example2_array)
 # Ans: 9 9 9 2 5
 
 
