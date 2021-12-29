@@ -1,6 +1,8 @@
 # Practice Problem: https://practice.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency/1
 # Supporting Tutorial: https://www.geeksforgeeks.org/sort-elements-by-frequency/
 
+# My code solves the problem but for some reason is not working in webpage terminal
+
 # Given an array of integers, sort the array according to frequency of elements.
 # That is elements that have higher frequency come first.
 # If frequencies of two elements are same, then smaller number comes first.
@@ -47,27 +49,6 @@ def sort_elements_by_frequency(array):
     return sorted_elements_and_frequency
 
 
-    # 1. Sort array (This allows for array to be order before sorting by frequency)
-    array.sort()
-    elements_and_frequency = {}
-
-    for i in array:
-        if i not in elements_and_frequency:
-            # 2. Create a dictionary of each element in the array
-            elements_and_frequency[i] = 1
-        elif i in elements_and_frequency:
-            # 3. Make the dictionary value equal to the amount of times it appears in the array
-            elements_and_frequency[i] += 1
-
-    # 4. Create new array sorted according to frequemcy of elements - highest fruency elemtns come first.
-    #    If frequencies of two elements are same, then smaller number comes first.
-    sorted_keys_elements_and_frequency = sorted(elements_and_frequency.items(), key = lambda x:x[1], reverse=True)
-    sorted_elements_and_frequency = []
-    for i in sorted_keys_elements_and_frequency:
-        for j in range(i[1]):
-            sorted_elements_and_frequency.append(i[0])
-
-    return sorted_elements_and_frequency
 
 # Example 1
 # example1_array = [5, 5, 4, 6, 4]
