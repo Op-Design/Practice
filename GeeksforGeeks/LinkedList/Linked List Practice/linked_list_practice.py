@@ -1,3 +1,8 @@
+''' 
+Probelm:
+https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1#
+
+'''
 #Your task is to complete this function
 #Your function should print the data in one line only
 #You need not to print new line
@@ -10,10 +15,10 @@ class node:
 '''
 class Solution:
     def display(self,node):
-        while not node.next == None:
-            print (node.data)
-        else:
-            print (node.data)
+        def display(self,node):
+        while node:
+            print (node.data, end = " ")
+            node = node.next
 
 
 

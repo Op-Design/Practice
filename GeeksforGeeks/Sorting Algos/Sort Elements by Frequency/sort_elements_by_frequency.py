@@ -1,5 +1,7 @@
-# Practice Problem: https://practice.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency/1
-# Supporting Tutorial: https://www.geeksforgeeks.org/sort-elements-by-frequency/
+"""
+Practice Problem: https://practice.geeksforgeeks.org/problems/sorting-elements-of-an-array-by-frequency/1
+Supporting Tutorial: https://www.geeksforgeeks.org/sort-elements-by-frequency/
+"""
 
 # My code solves the problem but for some reason is not working in webpage terminal
 
