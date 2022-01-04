@@ -15,7 +15,6 @@ class node:
 '''
 class Solution:
     def display(self,node):
-        def display(self,node):
         while node:
             print (node.data, end = " ")
             node = node.next
@@ -52,15 +51,15 @@ class Linked_List:
                 temp=temp.next
             temp.next = new_node
 
-# if __name__ == '__main__':
-#     t = int(input())
-#     for i in range(t):
-#         llist = Linked_List()
-#         n = int(input())
-#         values = list(map(int, input().strip().split()))
-#         for i in values:
-#             llist.insert(i)
-#         Solution().display(llist.get_head())
-#         print('')
+if __name__ == '__main__':
+    t = int(input())
+    for i in range(t):
+        llist = Linked_List()
+        n = int(input())
+        values = list(map(int, input().strip().split()))
+        for i in values:
+            llist.insert(i)
+        Solution().display(llist.get_head())
+        print('')
  #Contributed by:Harshit Sidhwa
 # } Driver Code Ends
