@@ -14,6 +14,7 @@ class node:
         self.next = None
 '''
 
+
 def delNode(head, k):
     current_node = head
     if k==1:
@@ -39,7 +40,20 @@ def delNode(head, k):
         previous_node.next = next_node
         return newhead
         
-    
+    '''
+    To free up data use gc.collect(). Example:
+
+    import gc
+    gc.collect()
+
+    You should do that after marking what you want to discard using del:
+
+    del my_array
+    del my_object
+    gc.collect()
+
+    (https://stackoverflow.com/questions/1316767/how-can-i-explicitly-free-memory-in-python)
+    '''
         
     
 
