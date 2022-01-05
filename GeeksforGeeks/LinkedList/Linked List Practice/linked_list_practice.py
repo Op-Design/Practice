@@ -3,6 +3,7 @@ Probelm:
 https://practice.geeksforgeeks.org/problems/print-linked-list-elements/1#
 
 '''
+
 #Your task is to complete this function
 #Your function should print the data in one line only
 #You need not to print new line
