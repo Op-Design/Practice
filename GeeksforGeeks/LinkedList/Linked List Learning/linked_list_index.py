@@ -17,6 +17,7 @@ class LinkedList:
 This is method only submission.
  You only need to complete below method.
 """
+
 def getNth(head, k):
     current_node = head
     count = 1
