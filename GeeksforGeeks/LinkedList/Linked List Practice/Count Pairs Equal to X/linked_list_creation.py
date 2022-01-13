@@ -19,8 +19,8 @@ class LinkedList:
             self.tail.next = new_node
         self.tail = new_node
     
-    def printlist(head):
-        temp = head
+    def printlist(self):
+        temp = self.head
         while(temp):
             print(temp.data, end=" ")
             temp = temp.next

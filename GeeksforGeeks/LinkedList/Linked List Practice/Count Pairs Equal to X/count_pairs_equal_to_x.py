@@ -44,6 +44,7 @@ class Node:
 '''
 class Solution:
     def countPair(self,h1,h2,n1,n2,x):
+        
         '''
         h1:  head of linkedList 1
         h2:  head of linkedList 2
@@ -51,19 +52,19 @@ class Solution:
         n2:   len of linkedList 1
         X:   given sum
         '''
-        # Loop through Linked List 1
+         # Loop through Linked List 1
         ll1_current_node = h1
-        ll2_current_node = h2
         pairs = 0
         i = 1
-        j = 1
         while i<=n1:
             # Subtract loop value from x and set as remainder
-            remainder = x - ll1_current_node
+            remainder = x - ll1_current_node.data
             if remainder > 0:
                 # Loop through Linked List 2 and and count how man instances of remainder exist
+                ll2_current_node = h2
+                j = 1
                 while j<=n2:
-                    if ll2_current_node==remainder:
+                    if ll2_current_node.data==remainder:
                         pairs+=1
                     ll2_current_node = ll2_current_node.next
                     j+=1
