@@ -17,10 +17,20 @@ data_keys = list(loaded_data.keys())
 data_keys_sort = data_keys.sort()
 #### print (data_keys)
 # 4. Use sorted array's values to create a new sorted dictionary
-sorted_dictionary = {}
+sorted_data = {}
 for key in data_keys:
-    sorted_dictionary[key] = loaded_data[key]
-print (sorted_dictionary)
+    sorted_data[key] = loaded_data[key]
+print (sorted_data)
+sorted_data_JSON = json.dumps(sorted_data)
+print (sorted_data_JSON)
 
+
+
+"""
+Alternative method found online:
+
+print (json.dumps({'6': 5, '4': 7}, sort_keys=True,
+indent=4, separators=(',', ': ')))
+"""
 
 
